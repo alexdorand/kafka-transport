@@ -1,0 +1,28 @@
+{
+  "templateMap": {
+    "newRegistration-en": {
+      "name": "newRegistration",
+      "locale": "en",
+      "subject": "Welcome to our system",
+      "contentFileName": "new-user-registration",
+      "from": "notifications@ssdigital.ca",
+      "contentType": "text/html"
+    },
+    "projectCreated-en": {
+      "name": "projectCreated",
+      "locale": "en",
+      "subject": "Your new project is created",
+      "contentFileName": "project-creation-confirmation",
+      "from": "notifications@ssdigital.ca",
+      "contentType": "text/html"
+    },
+    "newRegistration-fr": {
+      "name": "newRegistration",
+      "locale": "fr",
+      "subject": "Welcome to our system",
+      "contentFileName": "new-user-registration",
+      "from": "notifications@ssdigital.ca",
+      "contentType": "text/html"
+    }
+  }
+}

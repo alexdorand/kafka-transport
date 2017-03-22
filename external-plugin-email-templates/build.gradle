@@ -1,0 +1,40 @@
+group 'external-plugin-application'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/release" }
+    maven { url "http://repo.spring.io/milestone" }
+    maven { url "http://repo.spring.io/snapshot" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile project(':transport-common')
+
+    compile springWeb
+    compile springWebMvc
+
+    // https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4
+    compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '2.1.4.RELEASE'
+
+}
+
+
+task('ensureResources') << {
+    copy {
+        from 'build/resources/main'
+        into 'build/classes/main'
+        include '**/*'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}

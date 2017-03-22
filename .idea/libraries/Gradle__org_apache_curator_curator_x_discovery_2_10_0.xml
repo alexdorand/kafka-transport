@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.curator:curator-x-discovery:2.10.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-x-discovery/2.10.0/36f206725de72d51203d17c691e665c2c4296bf6/curator-x-discovery-2.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-x-discovery/2.10.0/54dddce90ff7e3821dbb9acc5a22a507ab46168a/curator-x-discovery-2.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

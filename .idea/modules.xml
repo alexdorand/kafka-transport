@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/external-plugin-application/external-plugin-application.iml" filepath="$PROJECT_DIR$/external-plugin-application/external-plugin-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-plugin-email-templates/external-plugin-email-templates.iml" filepath="$PROJECT_DIR$/external-plugin-email-templates/external-plugin-email-templates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-transport.iml" filepath="$PROJECT_DIR$/kafka-transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-common/transport-common.iml" filepath="$PROJECT_DIR$/transport-common/transport-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-consumer/transport-consumer.iml" filepath="$PROJECT_DIR$/transport-consumer/transport-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-couchbase/transport-couchbase.iml" filepath="$PROJECT_DIR$/transport-couchbase/transport-couchbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-error/transport-plugin-error.iml" filepath="$PROJECT_DIR$/transport-plugin-error/transport-plugin-error.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-funnel/transport-plugin-funnel.iml" filepath="$PROJECT_DIR$/transport-plugin-funnel/transport-plugin-funnel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-hipchat/transport-plugin-hipchat.iml" filepath="$PROJECT_DIR$/transport-plugin-hipchat/transport-plugin-hipchat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-ses/transport-plugin-ses.iml" filepath="$PROJECT_DIR$/transport-plugin-ses/transport-plugin-ses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-sns/transport-plugin-sns.iml" filepath="$PROJECT_DIR$/transport-plugin-sns/transport-plugin-sns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-producer/transport-producer.iml" filepath="$PROJECT_DIR$/transport-producer/transport-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-ses/transport-ses.iml" filepath="$PROJECT_DIR$/transport-plugin-ses/transport-ses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transport-plugin-sns/transport-sns.iml" filepath="$PROJECT_DIR$/transport-plugin-sns/transport-sns.iml" />
+    </modules>
+  </component>
+</project>

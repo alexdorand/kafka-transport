@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-zookeeper-discovery:1.0.3.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-zookeeper-discovery/1.0.3.RELEASE/9edc3dc9e05b5d203dff04427b9cbca611c2b709/spring-cloud-starter-zookeeper-discovery-1.0.3.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-zookeeper-discovery/1.0.3.RELEASE/265605664233b89e5609bb7ba8e280055ca1ac44/spring-cloud-starter-zookeeper-discovery-1.0.3.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

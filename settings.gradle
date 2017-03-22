@@ -1,0 +1,13 @@
+rootProject.name = 'kafka-transport'
+
+include 'transport-common'
+include 'transport-consumer'
+include 'transport-producer'
+include 'transport-plugin-ses'
+include 'transport-plugin-sns'
+include 'transport-plugin-error'
+include 'transport-plugin-funnel'
+include 'transport-plugin-hipchat'
+include 'external-plugin-application'
+include 'external-plugin-email-templates'
+include 'transport-couchbase'

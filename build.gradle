@@ -1,0 +1,50 @@
+group 'kafka-transport'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url "http://repo.hortonworks.com/content/repositories/releases/"}
+    mavenCentral()
+}
+
+ext {
+
+    gson = 'com.google.code.gson:gson:2.6.1'
+    couchbase = 'com.couchbase.client:java-client:2.3.5'
+    kafka = 'org.apache.kafka:kafka-clients:0.10.1.1'
+// https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    //compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.10.1.1'
+
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    //kafka = 'org.apache.kafka:kafka-clients:0.9.0.2.4.2.12-1'
+
+
+
+    springVersion = "4.3.2.RELEASE"
+    springSolr = "1.5.0.RELEASE"
+    coreLibVersion = "1.0-SNAPSHOT"
+    apacheOltuVersion = "1.0.1"
+
+    springContext = 'org.springframework:spring-context:' + springVersion
+    springContextSupport = 'org.springframework:spring-context-support:' + springVersion
+    springCore = 'org.springframework:spring-core:' + springVersion
+    springBeans = 'org.springframework:spring-beans:' + springVersion
+    springTx = 'org.springframework:spring-tx:' + springVersion
+    springWeb = 'org.springframework:spring-web:' + springVersion
+    springWebMvc = 'org.springframework:spring-webmvc:' + springVersion
+    springTest = 'org.springframework:spring-test:' + springVersion
+    springSolr = 'org.springframework:spring-data-solr:' + springVersion
+    springAop = 'org.springframework:spring-aop:' + springVersion
+    springAspects = 'org.springframework:spring-aspects:' + springVersion
+    lang3 = 'org.apache.commons:commons-lang3:3.0'
+}
+
+dependencies {
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+
+}

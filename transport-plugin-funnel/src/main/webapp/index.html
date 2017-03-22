@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Tree (British)</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.7/go-debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="sample">
+    <div id="myDiagramDiv"
+         style="width:1800px; height:950px; background-color: #DAE4E4;"></div>
+</div>
+</body>
+</html>
+
+<script>
+    var gogo = go.GraphObject.make;
+
+    var myDiagram =
+            gogo(go.Diagram, "myDiagramDiv",
+                    {
+                        initialContentAlignment: go.Spot.Center, // center Diagram contents
+                        "undoManager.isEnabled": true, // enable Ctrl-Z to undo and Ctrl-Y to redo
+                        layout: gogo(go.TreeLayout, // specify a Diagram.layout that arranges trees
+                                {angle: 90, layerSpacing: 35})
+                    });
+
+    // the template we defined earlier
+    myDiagram.nodeTemplate =
+            gogo(go.Node, "Vertical",
+                    {background: "#44CCFF"},
+                    gogo(go.Picture,
+                            {margin: 7, width: 20, height: 20, background: "yellow"},
+                            new go.Binding("source")),
+                    gogo(go.TextBlock, "Default Text",
+                            {margin: 3, stroke: "white", font: "bold 12px sans-serif"},
+                            new go.Binding("text", "name")),
+                    gogo(go.TextBlock, "",
+                            {margin: 3, stroke: "black", font: "10px sans-serif"},
+                            new go.Binding("text", "triggers"))
+            );
+
+    // define a Link template that routes orthogonally, with no arrowhead
+    myDiagram.linkTemplate =
+            gogo(go.Link,
+                    {routing: go.Link.Orthogonal, corner: 5},
+                    gogo(go.Shape, {strokeWidth: 3, stroke: "#555"})); // the link shape
+
+    var model = gogo(go.TreeModel);
+
+
+    $(document).ready(function() {
+
+        $.get( "http://localhost:8080/components/nastia/streams/newfrow1", function( data ) {
+            $( ".result" ).html( data );
+            model.nodeDataArray = data.models;
+            myDiagram.model = model;
+
+        });
+
+    });
+
+
+</script>
